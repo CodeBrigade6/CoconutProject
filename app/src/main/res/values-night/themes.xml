@@ -3,14 +3,9 @@
     <style name="Base.Theme.Thengappan" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
-        <style name="line">
 
-            <item name="android:background">@color/underline</item>
-            <item name="android:layout_marginTop">10dp</item>
-            <item name="android:layout_height">1dp</item>
-
-        </style>
 
 
     </style>
+
 </resources>
