@@ -2,6 +2,9 @@ package com.example.thengappan;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,4 +26,5 @@ public class MainActivity extends AppCompatActivity {
         },
                 3000);
     }
+
 }
