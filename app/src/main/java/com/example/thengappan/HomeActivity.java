@@ -40,11 +40,15 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-    private void animateBottomNav(LinearLayout layout, LinearLayout prevLayout, LinearLayout prevLayout2, TextView textView, TextView prevTextView , TextView prevTextView2, ImageView imageView, ImageView prevImageView, ImageView prevImageView2, int icon, int prevIcon, int prevIcon2) {
+    private void animateBottomNav(LinearLayout layout, LinearLayout prevLayout, LinearLayout prevLayout2, TextView textView, TextView prevTextView , TextView prevTextView2, ImageView imageView, ImageView prevImageView, ImageView prevImageView2, int icon, int prevIcon, int prevIcon2 ) {
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                    getSupportFragmentManager().beginTransaction()
+                            .setReorderingAllowed(true)
+                                    .replace(R.id.fragment_container , CropProtectionFragment.class , null)
+                                            .commit();
 
                     prevTextView2.setVisibility(View.GONE);
                     prevTextView.setVisibility(View.GONE);

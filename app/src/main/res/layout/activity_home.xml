@@ -7,6 +7,12 @@
     android:background="@color/secondary"
     tools:context=".HomeActivity">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        android:layout_above = "@+id/linearLayout"/>
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
