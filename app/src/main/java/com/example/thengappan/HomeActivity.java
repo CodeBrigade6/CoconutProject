@@ -45,6 +45,8 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
+
                     getSupportFragmentManager().beginTransaction()
                             .setReorderingAllowed(true)
                                     .replace(R.id.fragment_container , CropProtectionFragment.class , null)
