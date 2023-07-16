@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/secondary"
     tools:context=".HomeActivity">
 
     <androidx.fragment.app.FragmentContainerView
@@ -18,7 +17,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/primary"
+        android:background="@drawable/nav_backdrop"
         android:elevation="10dp"
         android:gravity="center"
         android:paddingStart="20dp"

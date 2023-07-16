@@ -1,6 +1,7 @@
 package com.example.thengappan;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.View;
@@ -31,16 +32,18 @@ public class HomeActivity extends AppCompatActivity {
         final TextView cropProtectionText = findViewById(R.id.crop_protection_text);
         final TextView droneViewText = findViewById(R.id.drone_view_text);
 
-        animateBottomNav(homeLayout, cropProtectionLayout , droneViewLayout , homeText, cropProtectionText, droneViewText, homeImage, cropProtectionImage, droneViewImage, R.drawable.home_icon, R.drawable.crop_protection_icon,R.drawable.drone_view_icon);
-        animateBottomNav(cropProtectionLayout, homeLayout , droneViewLayout , cropProtectionText, homeText, droneViewText, cropProtectionImage, homeImage, droneViewImage, R.drawable.crop_protection_icon,R.drawable.home_icon,R.drawable.drone_view_icon );
-        animateBottomNav(droneViewLayout, cropProtectionLayout , homeLayout ,droneViewText, cropProtectionText, homeText,  droneViewImage,homeImage, cropProtectionImage, R.drawable.drone_view_icon, R.drawable.home_icon,R.drawable.crop_protection_icon );
+        
+
+        animateBottomNav(homeLayout, cropProtectionLayout , droneViewLayout , homeText, cropProtectionText, droneViewText, homeImage, cropProtectionImage, droneViewImage, R.drawable.home_icon, R.drawable.crop_protection_icon,R.drawable.drone_view_icon, HomeFragment.class);
+        animateBottomNav(cropProtectionLayout, homeLayout , droneViewLayout , cropProtectionText, homeText, droneViewText, cropProtectionImage, homeImage, droneViewImage, R.drawable.crop_protection_icon,R.drawable.home_icon,R.drawable.drone_view_icon, CropProtectionFragment.class);
+        animateBottomNav(droneViewLayout, cropProtectionLayout , homeLayout ,droneViewText, cropProtectionText, homeText,  droneViewImage,homeImage, cropProtectionImage, R.drawable.drone_view_icon, R.drawable.home_icon,R.drawable.crop_protection_icon, PestFragment.class);
 
     }
 
 
 
 
-    private void animateBottomNav(LinearLayout layout, LinearLayout prevLayout, LinearLayout prevLayout2, TextView textView, TextView prevTextView , TextView prevTextView2, ImageView imageView, ImageView prevImageView, ImageView prevImageView2, int icon, int prevIcon, int prevIcon2 ) {
+    private void animateBottomNav(LinearLayout layout, LinearLayout prevLayout, LinearLayout prevLayout2, TextView textView, TextView prevTextView , TextView prevTextView2, ImageView imageView, ImageView prevImageView, ImageView prevImageView2, int icon, int prevIcon, int prevIcon2, Class<? extends Fragment> fragmentClass) {
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,7 +52,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     getSupportFragmentManager().beginTransaction()
                             .setReorderingAllowed(true)
-                                    .replace(R.id.fragment_container , CropProtectionFragment.class , null)
+                                    .replace(R.id.fragment_container , fragmentClass , null)
                                             .commit();
 
                     prevTextView2.setVisibility(View.GONE);
