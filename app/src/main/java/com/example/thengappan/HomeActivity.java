@@ -32,7 +32,10 @@ public class HomeActivity extends AppCompatActivity {
         final TextView cropProtectionText = findViewById(R.id.crop_protection_text);
         final TextView droneViewText = findViewById(R.id.drone_view_text);
 
-        
+        getSupportFragmentManager().beginTransaction()
+                .setReorderingAllowed(true)
+                .replace(R.id.fragment_container , HomeFragment.class , null)
+                .commit();
 
         animateBottomNav(homeLayout, cropProtectionLayout , droneViewLayout , homeText, cropProtectionText, droneViewText, homeImage, cropProtectionImage, droneViewImage, R.drawable.home_icon, R.drawable.crop_protection_icon,R.drawable.drone_view_icon, HomeFragment.class);
         animateBottomNav(cropProtectionLayout, homeLayout , droneViewLayout , cropProtectionText, homeText, droneViewText, cropProtectionImage, homeImage, droneViewImage, R.drawable.crop_protection_icon,R.drawable.home_icon,R.drawable.drone_view_icon, CropProtectionFragment.class);
