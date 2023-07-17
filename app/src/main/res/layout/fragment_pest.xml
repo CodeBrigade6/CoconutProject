@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,46 +8,33 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/WHITE"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:ignore="MissingConstraints">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fontFamily="@font/satoshi_variable_font"
-        android:text=" Coconut Pests"
-        android:textColor="@color/primary_text"
-        android:textSize="80px" />
-    </androidx.appcompat.widget.Toolbar>
-
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingTop="70dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingBottom="90dp"
-            >
+            android:paddingBottom="20dp"
+            android:background="@drawable/bg_one">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/pest_bg" />
 
             <GridLayout
                 android:id="@+id/pests_grid"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:columnCount="2"
-                android:rowCount="3"
-                >
+                android:rowCount="3">
 
 
 
@@ -341,10 +328,6 @@
             </GridLayout>
         </LinearLayout>
 
-    </ScrollView>
+</ScrollView>
 
 
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>

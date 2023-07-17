@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RhinoFragment">
+    tools:context=".RhinoFragment"
+    android:background="@drawable/bg_one">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.appcompat.widget.Toolbar
@@ -50,7 +51,7 @@
                android:text="Coconut trees are more prone to rhinoceros beetle attacks during summer.
 \n The young stage of this young beetle grows only in earth pits and waste piles. \nBut during the growing and mature stage i.e. the only the mature beetle attacks the coconut trees. \n' V ' shaped leaves are the symptoms of the beetle attack.
 This is because the beetle bites the young sprout of the coconut trees."
-               android:fontFamily="@font/satoshi_variable_font"
+               android:fontFamily="@font/satoshi_bold"
                android:textColor="@color/secondary_text"/>
        </RelativeLayout>
 </FrameLayout>
