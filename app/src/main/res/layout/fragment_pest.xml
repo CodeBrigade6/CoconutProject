@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".PestFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,18 +14,337 @@
         android:layout_height="wrap_content"
         android:background="@color/WHITE"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+        android:theme="?attr/actionBarTheme"
+        tools:ignore="MissingConstraints">
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="PESTS"
-        android:textColor="@color/primary_text"
-        android:textSize="100px"
         android:fontFamily="@font/satoshi_variable_font"
+        android:text=" Coconut Pests"
+        android:textColor="@color/primary_text"
+        android:textSize="80px" />
+    </androidx.appcompat.widget.Toolbar>
 
-        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="90dp"
+            >
+
+            <GridLayout
+                android:id="@+id/pests_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="3"
+                >
 
 
 
-</FrameLayout>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/rhino_card"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/WHITE"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/rhino_image"
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/rhinoceros_beetle" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/satoshi_variable_font"
+                            android:layout_below="@+id/rhino_image"
+                            android:text="Rhinoceros Beetle"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="30dp"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/slug_card"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/WHITE"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/slug_image"
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/slug" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/satoshi_variable_font"
+                            android:layout_below="@+id/slug_image"
+                            android:text="Slug Caterpillar"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="30dp"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/red_card"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/WHITE"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/red_image"
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/red" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/satoshi_variable_font"
+                            android:layout_below="@+id/red_image"
+                            android:text="Red Palm Weevil"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="30dp"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mite_card"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/WHITE"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/mite_image"
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/mite" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/satoshi_variable_font"
+                            android:layout_below="@+id/mite_image"
+                            android:text="Eriophyid Mite"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="30dp"/>
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/white_card"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/WHITE"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/white_image"
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/white" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/satoshi_variable_font"
+                            android:layout_below="@+id/white_image"
+                            android:text="White Grub"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="30dp"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/worm_card"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/WHITE"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/worm_image"
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/worm" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/satoshi_variable_font"
+                            android:layout_below="@+id/worm_image"
+                            android:text="Black Headed Worm"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"/>
+                    </RelativeLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bugs_card"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/WHITE"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/bugs_image"
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/bugs" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/satoshi_variable_font"
+                            android:layout_below="@+id/bugs_image"
+                            android:text="Mealy Bugs"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"/>
+                    </RelativeLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/skipper_card"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/WHITE"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/skipper_image"
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/skipper" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/satoshi_variable_font"
+                            android:layout_below="@+id/skipper_image"
+                            android:text="Coconut Skipper"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"/>
+                    </RelativeLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </GridLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,12 +2,17 @@ package com.example.thengappan;
 
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.GridLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +21,15 @@ import android.view.ViewGroup;
  */
 public class PestFragment extends Fragment {
     RecyclerView recyclerView;
+    CardView rhino_card;
+    CardView slug_card;
+    CardView red_card;
+    CardView mite_card;
+    CardView white_card;
+    CardView worm_card;
+    CardView bugs_card;
+    CardView skipper_card;
+
     
 
     // TODO: Rename parameter arguments, choose names that match
@@ -52,16 +66,47 @@ public class PestFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
+
+        
+//        if (getArguments() != null) {
+//            mParam1 = getArguments().getString(ARG_PARAM1);
+//            mParam2 = getArguments().getString(ARG_PARAM2);
+//        }
+
     }
+
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view= inflater.inflate(R.layout.fragment_pest,container, false);
+
+        GridLayout gridLayout= view.findViewById(R.id.pests_grid);
+        rhino_card = view.findViewById(R.id.rhino_card);
+        slug_card = view.findViewById(R.id.slug_card);
+        rhino_card.setOnClickListener( new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // Create a new instance of the fragment you want to open
+
+                RhinoFragment rhinoFragment = RhinoFragment.newInstance();
+
+                // Replace the current fragment with the new one
+                FragmentManager fragmentManager = getParentFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, rhinoFragment)
+                        .addToBackStack(null)
+                        .commit();
+
+            }
+        });
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pest, container, false);
+        return view;
     }
+
+
 }
