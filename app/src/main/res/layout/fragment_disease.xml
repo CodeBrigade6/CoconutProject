@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="0dp"
+    tools:context=".DiseaseFragment">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_one">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="2">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="302dp"
+                android:layout_height="136dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="-9dp"
+                android:background="@drawable/bg_image" />
+
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="80dp"
+            android:layout_marginTop="30dp"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/budrot_card"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/WHITE"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/budrot"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/budrot" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/budrot"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/satoshi_variable_font"
+                        android:paddingLeft="65dp"
+                        android:paddingBottom="5dp"
+                        android:text="Bud rot" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/leafrot_card"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/WHITE"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/leafrot"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/leaf_rot" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/leafrot"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/satoshi_variable_font"
+                        android:paddingLeft="65dp"
+                        android:paddingBottom="5dp"
+                        android:text="Leaf rot" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rootwilt_card"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/WHITE"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/rootwilt"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/rootwilt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rootwilt"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/satoshi_variable_font"
+                        android:paddingLeft="60dp"
+                        android:paddingBottom="5dp"
+                        android:text="Root wilt" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/phytoplasma_card"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/WHITE"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/phytoplasma"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/phytoplasma" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/phytoplasma"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/satoshi_variable_font"
+                        android:paddingLeft="50dp"
+                        android:paddingBottom="5dp"
+                        android:text="Phytoplasma" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/stembleeding_card"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/WHITE"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/stembleeding"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/stembleeding" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/stembleeding"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/satoshi_variable_font"
+                        android:paddingLeft="41dp"
+                        android:paddingBottom="5dp"
+                        android:text="Stem Bleeding" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tanjorewilt_card"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/WHITE"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/tanjorewilt"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/tanjorewilt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tanjorewilt"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/satoshi_variable_font"
+                        android:paddingLeft="52dp"
+                        android:paddingBottom="5dp"
+                        android:text="Tanjore wilt" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

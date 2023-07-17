@@ -55,6 +55,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     getSupportFragmentManager().beginTransaction()
                             .setReorderingAllowed(true)
+
                                     .replace(R.id.fragment_container , fragmentClass , null)
                                             .commit();
 

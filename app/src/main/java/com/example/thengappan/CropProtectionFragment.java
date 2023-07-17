@@ -1,28 +1,15 @@
 package com.example.thengappan;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.view.ViewParentCompat;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager2.widget.CompositePageTransformer;
-import androidx.viewpager2.widget.MarginPageTransformer;
-import androidx.viewpager2.widget.ViewPager2;
+import androidx.fragment.app.FragmentManager;
 
-import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.HorizontalScrollView;
-import android.widget.ScrollView;
-
-import com.makeramen.roundedimageview.RoundedImageView;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.zip.Inflater;
 
 public class CropProtectionFragment extends Fragment {
 
@@ -60,8 +47,32 @@ public class CropProtectionFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_crop_protection, container, false);
+        View view= inflater.inflate(R.layout.fragment_crop_protection, container, false);
+        CardView diseaseCard = view.findViewById(R.id.crop_protection_disease_card);
+
+        CardView pestCard = view.findViewById(R.id.crop_protection_pest_card);
+        DiseaseFragment diseaseFragment = new DiseaseFragment();
+        PestFragment pestFragment = new PestFragment();
+        replaceFragment(diseaseCard, new DiseaseFragment());
+        replaceFragment(pestCard, new PestFragment());
+
+
+        return view;
+    }
+    public void replaceFragment(CardView card, Object fragmentClass) {
+
+        card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, (Fragment) fragmentClass)
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
 
     }
 
