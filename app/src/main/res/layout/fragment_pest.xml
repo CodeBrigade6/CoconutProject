@@ -145,8 +145,7 @@
                     app:cardBackgroundColor="@color/WHITE"
                     app:cardMaxElevation="12dp"
                     app:cardPreventCornerOverlap="false"
-                    app:cardUseCompatPadding="false"
-                    >
+                    app:cardUseCompatPadding="false">
 
 
                     <RelativeLayout
