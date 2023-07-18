@@ -87,6 +87,7 @@ public class PestFragment extends Fragment {
         GridLayout gridLayout= view.findViewById(R.id.pests_grid);
         rhino_card = view.findViewById(R.id.rhino_card);
         slug_card = view.findViewById(R.id.slug_card);
+        red_card= view.findViewById(R.id.red_card);
         rhino_card.setOnClickListener( new View.OnClickListener(){
 
             @Override
@@ -125,6 +126,26 @@ public class PestFragment extends Fragment {
             }
 
         });
+        red_card.setOnClickListener( new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // Create a new instance of the fragment you want to open
+
+                RedFragment redFragment = RedFragment.newInstance();
+
+                // Replace the current fragment with the new one
+                FragmentManager fragmentManager = getParentFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, redFragment)
+                        .addToBackStack(null)
+                        .commit();
+
+
+            }
+
+        });
+
 
         // Inflate the layout for this fragment
         return view;

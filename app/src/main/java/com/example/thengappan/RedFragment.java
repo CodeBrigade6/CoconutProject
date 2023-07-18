@@ -46,6 +46,12 @@ public class RedFragment extends Fragment {
         return fragment;
     }
 
+    public static RedFragment newInstance() {
+        RedFragment redFragment= new RedFragment();
+        return redFragment;
+
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
