@@ -102,8 +102,30 @@ public class PestFragment extends Fragment {
                         .addToBackStack(null)
                         .commit();
 
+
             }
+
         });
+        slug_card.setOnClickListener( new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // Create a new instance of the fragment you want to open
+
+                SlugFragment slugFragment = SlugFragment.newInstance();
+
+                // Replace the current fragment with the new one
+                FragmentManager fragmentManager = getParentFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, slugFragment)
+                        .addToBackStack(null)
+                        .commit();
+
+
+            }
+
+        });
+
         // Inflate the layout for this fragment
         return view;
     }

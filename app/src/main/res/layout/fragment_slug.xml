@@ -14,23 +14,23 @@
         android:paddingBottom="20dp">
 
         <ImageView
-            android:id="@+id/rhino_imageView"
+            android:id="@+id/slug_imageView"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@drawable/rhino_header"
+            android:src="@drawable/slug_header"
             />
         <TextView
-            android:id="@+id/rhino_heading1"
+            android:id="@+id/slug_heading1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rhinoceros Beetle"
+            android:text="Slug Caterpillar"
             android:paddingLeft="10dp"
             android:textStyle="bold"
             android:fontFamily="@font/satoshi_variable_font"
             android:textSize="28sp"
             android:textColor="@color/brown"/>
         <TextView
-            android:id="@+id/rhino_paragraph1"
+            android:id="@+id/slug_paragraph1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/satoshi_medium"
@@ -40,11 +40,9 @@
             android:paddingRight="10dp"
             android:justificationMode="inter_word"
             android:textColor="@color/darkGray"
-            android:text="Coconut trees are more prone to rhinoceros beetle attacks during summer.
-            \nThe young stage of this young beetle grows only in earth pits and waste piles. \nBut during the growing and mature stage i.e. the only the mature beetle attacks the coconut trees. \n'V' shaped leaves are the symptoms of the beetle attack.
-            This is because the beetle bites the young sprout of the coconut trees." />
+            android:text="The larvae or caterpillar of Darna catenatus causes severe defoliation on oil palm. \nThe caterpillars usually feed on the underside of leaves. \nThe young caterpillars often strip the leaf surface to feed, while the older caterpillars eat away the whole leaf, leaving only the midrib. \nThe entire crown of the palm may be defoliated during severe out-breaks. \nSevere defoliation, particularly of the young leaves, may affect the yield of fresh fruit bunches (FFB). \nOut-breaks usually develop on small groups of palms or on isolated tree. \nFeeding damage is accentuated by invasion of Pestalotiopsis palmarum. \nHeavy infestations on coconut trees result in nut fall and the trees take 1.5-2 years to recover" />
         <TextView
-            android:id="@+id/rhino_heading2"
+            android:id="@+id/slug_heading2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Control Measures"
@@ -55,7 +53,7 @@
             android:textSize="28sp"
             android:textColor="@color/brown"/>
         <TextView
-            android:id="@+id/rhino_paragraph2"
+            android:id="@+id/slug_paragraph2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/satoshi_medium"
@@ -64,9 +62,14 @@
             android:paddingRight="10dp"
             android:justificationMode="inter_word"
             android:textColor="@color/darkGray"
-            android:text="1. Neem Powder (150 gm) and soft sand is mixed in the ratio 1:2 can be applied in the middle of the palm once in three months to prevent damage. \n2. At a rate of one per acre, rhinoceros beetle breeding traps can attract and kill the beetles. \n3. Three naphthalene balls per tree can be kept in between the barks of the palm" />
+            android:text="1. Remove the affected leaves in the lower rows.
+Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor mounted power operated pump and spray gun to reach the tree top.
+\n2. Root feeding with monocrotophos (10 ml + 10ml) after selecting a feeder root.
+\n3. A waiting period of 45 days must be observed from application to harvest.
+\n4. Monitor the pest occurrence in new areas with the help of light traps to attract moths.
+\n5. Leaflets have to be observed for fresh incidence by cutting 1-2 leaf fronds in the garden." />
         <TextView
-            android:id="@+id/rhino_heading3"
+            android:id="@+id/slug_heading3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Images and Videos"
@@ -90,24 +93,24 @@
                 android:gravity="center_horizontal"
                 android:orientation="horizontal">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/rhino_info_card"
-                android:layout_width="200dp"
-                android:layout_height="250dp"
-                android:layout_margin="20dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/rhino_info_card"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_width="230dp"
-                        android:layout_height="250dp"
-                        android:layout_marginLeft="0dp"
-                        android:layout_marginTop="0dp"
-                        android:src="@drawable/rhino1" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/slug1" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
                     android:id="@+id/rhino_info_card2"
                     android:layout_width="200dp"
@@ -123,7 +126,7 @@
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/rhino2" />
+                            android:src="@drawable/slug2" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -141,7 +144,7 @@
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/rhino3" />
+                            android:src="@drawable/slug3" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -159,7 +162,7 @@
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/rhino4" />
+                            android:src="@drawable/slug4" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -177,7 +180,7 @@
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/rhino5" />
+                            android:src="@drawable/slug5" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -198,7 +201,7 @@
                             android:src="@drawable/rhino6" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-                
+
 
             </LinearLayout>
 
