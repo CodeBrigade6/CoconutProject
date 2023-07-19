@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhiteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/white_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/white_header"
+            />
+        <TextView
+            android:id="@+id/white_heading1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="White Grub"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/satoshi_variable_font"
+            android:textSize="28sp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:id="@+id/white_paragraph1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/satoshi_medium"
+            android:paddingTop="10dp"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/darkGray"
+            android:text="Grubs feed on the apical soft region of the coconut roots. Infestations affects the process of absorption of nutrients adversely.
+\nInfested palms show yellowing of leaves and immature nuts fall.
+\nInfestation in a garden continuously for a few years results in stunted growth of young palms. In nurseries, they cause drying up of leaves and gradual death of seedlings." />
+        <TextView
+            android:id="@+id/white_heading2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Control Measures"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/satoshi_variable_font"
+            android:textSize="28sp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:id="@+id/white_paragraph2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/satoshi_medium"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/darkGray"
+            android:text="1. This can be controlled by stem injection through a stove wick soaked in 0.2% (2 ml/litre) Fenthion or 0.2% (2 ml/litre) Dichlorvos and plugging the hole and repeating the treatment using the same wick and hole a month after.\n2. Tree banding with inverted iron cores or prosophis thorns. \n3. Baiting with bromodiolone 0.05% at 10 g/tree at crown region twice at an interval of 12 days." />
+        <TextView
+            android:id="@+id/white_heading3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Images and Videos"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/satoshi_variable_font"
+            android:textSize="28sp"
+            android:textColor="@color/brown"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:scrollbarSize="0dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/white_info_card"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/white1" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/white_info_card2"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/white2" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/white_info_card3"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/white3" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/white_info_card4"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/white4" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/white_info_card5"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/white5" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/white_info_card6"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/white6" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

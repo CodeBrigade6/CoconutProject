@@ -5,13 +5,11 @@ import android.os.Bundle;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.GridLayout;
 
 /**
@@ -89,6 +87,7 @@ public class PestFragment extends Fragment {
         slug_card = view.findViewById(R.id.slug_card);
         red_card= view.findViewById(R.id.red_card);
         mite_card=view.findViewById(R.id.mite_card);
+        white_card= view.findViewById(R.id.white_card);
         rhino_card.setOnClickListener( new View.OnClickListener(){
 
             @Override
@@ -165,6 +164,26 @@ public class PestFragment extends Fragment {
             }
 
         });
+        white_card.setOnClickListener( new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // Create a new instance of the fragment you want to open
+
+                WhiteFragment whiteFragment = WhiteFragment.newInstance();
+
+                // Replace the current fragment with the new one
+                FragmentManager fragmentManager = getParentFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, whiteFragment)
+                        .addToBackStack(null)
+                        .commit();
+
+
+            }
+
+        });
+
 
 
 
