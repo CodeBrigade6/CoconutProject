@@ -88,6 +88,7 @@ public class PestFragment extends Fragment {
         red_card= view.findViewById(R.id.red_card);
         mite_card=view.findViewById(R.id.mite_card);
         white_card= view.findViewById(R.id.white_card);
+        worm_card=view.findViewById(R.id.worm_card);
         rhino_card.setOnClickListener( new View.OnClickListener(){
 
             @Override
@@ -183,6 +184,26 @@ public class PestFragment extends Fragment {
             }
 
         });
+        worm_card.setOnClickListener( new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // Create a new instance of the fragment you want to open
+
+                WormFragment wormFragment = WormFragment.newInstance();
+
+                // Replace the current fragment with the new one
+                FragmentManager fragmentManager = getParentFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, wormFragment)
+                        .addToBackStack(null)
+                        .commit();
+
+
+            }
+
+        });
+
 
 
 
