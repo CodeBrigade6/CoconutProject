@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="0dp"
+    tools:context=".StembleedingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/stembleeding_imageview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="75dp"
+            android:layout_height="250dp"
+            android:src="@drawable/stembleeding_header"
+            />
+        <TextView
+            android:id="@+id/stembleeding_heading1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stem Bleeding"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/satoshi_variable_font"
+            android:textSize="28sp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:id="@+id/stembleeding_paragraph1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/satoshi_medium"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/darkGray"
+            android:text="The progress of the disease is faster during July to November.\nStem Bleeding is characterized by the exudation of a dark reddish brown liquid from the longitudinal cracks in the bark and wounds on the stem trickling down for a distance of several inches to several feet.\nThe lesions spread upwards as the disease progresses.\nThe liquid oozing out dries up and turns black. The tissues below the lesions become rotten and turn yellow first and later black.\nIn advanced cases, the inner portions of affected trunks are hollow due to decay of inner tissues.\nAs a result of extensive damage in the stem tissue, the outer whorl of the leaves turn yellow, dry and shed prematurely. The production of bunches is affected adversely. Nut fall is also noticed" />
+        <TextView
+            android:id="@+id/stembleeding_heading2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Control Measures"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/satoshi_variable_font"
+            android:textSize="28sp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:id="@+id/stembleeding_paragraph2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/satoshi_medium"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/darkGray"
+            android:text="1. Destroy the chiseled materials by burning. Avoid any mechanical injury to trunk.\n2. Along with 50kg FYM, apply 5kg neem cake containing the antagonistic fungi, Trichoderma @ 200g/palm/year culture to the basin during September.\n3. Chisel out completely the affected tissues and paint the wound with tridemorph 5% or Bordeaux paste. Apply coal tar after 1-2 days on the treated portion. Burn off chiseled pieces.\n4. Root feed with Tridemorph 5ml in 100 ml water, thrice a year during April-May, September-October and January-February to prevent further spread of lesions." />
+        <TextView
+            android:id="@+id/stembleeding_heading3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Images and Videos"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/satoshi_variable_font"
+            android:textSize="28sp"
+            android:textColor="@color/brown"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:scrollbarSize="0dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/stembleeding_info_card2"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/stembleeding1" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/stembleeding_info_card3"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/stembleeding2" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/stembleeding_info_card4"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/stembleeding3" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/stembleeding_info_card5"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="250dp"-->
+<!--                    android:layout_margin="20dp">-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="230dp"-->
+<!--                            android:layout_height="250dp"-->
+<!--                            android:layout_marginLeft="0dp"-->
+<!--                            android:layout_marginTop="0dp"-->
+<!--                            android:src="@drawable/budrot4" />-->
+<!--                    </LinearLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -63,6 +63,41 @@
             <!-- Row 1 -->
 
             <!-- Column 1 -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/phytoplasma_card"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/WHITE"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/phytoplasma"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/phytoplasma" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/phytoplasma"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/satoshi_variable_font"
+                        android:paddingLeft="55dp"
+                        android:paddingBottom="5dp"
+                        android:text="Kerala wilt" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:id="@+id/budrot_card"
                 android:layout_width="180dp"
@@ -134,7 +169,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/rootwilt_card"
+                android:id="@+id/leafblight_card"
                 android:layout_width="180dp"
                 android:layout_height="200dp"
                 android:layout_margin="10dp"
@@ -150,56 +185,21 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/rootwilt"
+                        android:id="@+id/leafblight"
                         android:layout_width="150dp"
                         android:layout_height="140dp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/rootwilt" />
+                        android:src="@drawable/leafblight" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/rootwilt"
+                        android:layout_below="@+id/leafblight"
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/satoshi_variable_font"
-                        android:paddingLeft="60dp"
+                        android:paddingLeft="55dp"
                         android:paddingBottom="5dp"
-                        android:text="Root wilt" />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/phytoplasma_card"
-                android:layout_width="180dp"
-                android:layout_height="200dp"
-                android:layout_margin="10dp"
-                app:cardBackgroundColor="@color/WHITE"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="10dp"
-                app:cardMaxElevation="12dp"
-                app:cardPreventCornerOverlap="false"
-                app:cardUseCompatPadding="false">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/phytoplasma"
-                        android:layout_width="150dp"
-                        android:layout_height="140dp"
-                        android:layout_centerInParent="true"
-                        android:src="@drawable/phytoplasma" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/phytoplasma"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/satoshi_variable_font"
-                        android:paddingLeft="50dp"
-                        android:paddingBottom="5dp"
-                        android:text="Phytoplasma" />
+                        android:text="Leaf Blight" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 

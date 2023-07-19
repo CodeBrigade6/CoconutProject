@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="0dp"
+    tools:context=".LeafrotFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/leafrot_imageview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="75dp"
+            android:layout_height="250dp"
+            android:src="@drawable/leafrot_header"
+            />
+        <TextView
+            android:id="@+id/leafrot_heading1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leaf Rot"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/satoshi_variable_font"
+            android:textSize="28sp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:id="@+id/leafrot_paragraph1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/satoshi_medium"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/darkGray"
+            android:text="The first symptom is the appearance of water-soaked brown lesions in the spear leaves of root-wilt affected palms.\nGradually these spots enlarge and coalesce resulting in extensive rotting.\nAs the leaf unfurls the rotten portions of the lamina dry and get blown off in wind, giving a 'fan' shape to the leaves.\nSometimes, the symptom becomes very acute and the spear fails to unfurl." />
+        <TextView
+            android:id="@+id/leafrot_heading2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Control Measures"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/satoshi_variable_font"
+            android:textSize="28sp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:id="@+id/leafrot_paragraph2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/satoshi_medium"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/darkGray"
+            android:text="1. Remove the rotten portions from the spear and the two adjacent leaves.\n2. Pour fungicide solution of Hexaconazole - 2ml or Mancozeb - 3g in 300ml water per palm to the base of spindle leaf. 2-3 rounds of spraying are sufficient in case of mild infection.\n3. Spray the crowns and leaves with 1% Bordeaux mixture or 0.5% copper oxychloride formulations or 0.4% mancozeb in January, April-May and September. While spraying, care has to be taken to spray the spindle leaf." />
+        <TextView
+            android:id="@+id/budrot_heading3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Images and Videos"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/satoshi_variable_font"
+            android:textSize="28sp"
+            android:textColor="@color/brown"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:scrollbarSize="0dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/leafrot_info_card2"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/leafrot1" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/leafrot_info_card3"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/leafrot2" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/leafrot_info_card4"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/leafrot3" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/budrot_info_card5"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="250dp"-->
+<!--                    android:layout_margin="20dp">-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="230dp"-->
+<!--                            android:layout_height="250dp"-->
+<!--                            android:layout_marginLeft="0dp"-->
+<!--                            android:layout_marginTop="0dp"-->
+<!--                            android:src="@drawable/budrot4" />-->
+<!--                    </LinearLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

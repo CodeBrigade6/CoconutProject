@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="0dp"
+    tools:context=".BudrotFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/budrot_imageview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="75dp"
+            android:layout_height="250dp"
+            android:src="@drawable/disease_header"
+            />
+        <TextView
+            android:id="@+id/budrot_heading1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bud Rot"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/satoshi_variable_font"
+            android:textSize="28sp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:id="@+id/budrot_paragraph1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/satoshi_medium"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/darkGray"
+            android:text="Palms of all ages are susceptible, but it is more severe in young palms of 5-10 years. The first indication of the disease is seen on the central shoot of the tree (spindle).\nThe heart leaf shows discolouration which becomes brown instead of yellowish brown. This is followed by drooping and breaking off of the heart leaf.
+            \nWith the progress of disease, more number of leaves get affected with loss of lusture and turn pale yellow.\nThe entire base of the crown may be rotten emitting a foul smell.\nThe central shoot comes off easily on slight pulling.\nThe leaves fall in succession starting from the top of the crown.\nThe leaf falling and bunch shedding continue until a few outer leaves are left unaffected.\nBut within few months the infection leads to complete shedding of leaves, with subsequent wilt and death of the tree." />
+        <TextView
+            android:id="@+id/budrot_heading2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Control Measures"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/satoshi_variable_font"
+            android:textSize="28sp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:id="@+id/budrot_paragraph2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/satoshi_medium"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/darkGray"
+            android:text="1. The infected tissues from the crown region should be removed and protected with Bordeaux paste.\n2. Bordeaux mixture at 1% may be sprayed so as to reach the crown region as pre-monsoon spray." />
+        <TextView
+            android:id="@+id/budrot_heading3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Images and Videos"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/satoshi_variable_font"
+            android:textSize="28sp"
+            android:textColor="@color/brown"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:scrollbarSize="0dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/budrot_info_card2"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/budrot1" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/budrot_info_card3"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/budrot2" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/budrot_info_card4"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/budrot3" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/budrot_info_card5"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/budrot4" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

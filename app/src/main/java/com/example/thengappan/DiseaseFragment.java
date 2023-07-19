@@ -2,7 +2,9 @@ package com.example.thengappan;
 
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,18 +51,43 @@ public class DiseaseFragment extends Fragment {
 
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_disease, container, false);
+        View view= inflater.inflate(R.layout.fragment_disease, container, false);
+        CardView budrotCard = view.findViewById(R.id.budrot_card);
+        CardView leafCard = view.findViewById(R.id.leafrot_card);
+        CardView leafblightCard = view.findViewById(R.id.leafblight_card);
+        CardView phytoplasmaCard = view.findViewById(R.id.phytoplasma_card);
+        CardView stembleedingCard = view.findViewById(R.id.stembleeding_card);
+        CardView tanjorewiltCard = view.findViewById(R.id.tanjorewilt_card);
+        BudrotFragment budrotFragment = new BudrotFragment();
+        LeafrotFragment leafrotFragment = new LeafrotFragment();
+        LeafblightFragment leafblightFragment = new LeafblightFragment();
+        PhytoplasmaFragment phytoplasmaFragment = new PhytoplasmaFragment();
+        StembleedingFragment stembleedingFragment = new StembleedingFragment();
+        TanjorewiltFragment tanjorewiltFragment = new TanjorewiltFragment();
+        replaceFragment(budrotCard, new BudrotFragment());
+        replaceFragment(leafCard, new LeafrotFragment());
+        replaceFragment(leafblightCard, new LeafblightFragment());
+        replaceFragment(phytoplasmaCard, new PhytoplasmaFragment());
+        replaceFragment(stembleedingCard, new StembleedingFragment());
+        replaceFragment(tanjorewiltCard, new TanjorewiltFragment());
+        return view;
+    }
+    public void replaceFragment(CardView card, Object fragmentClass) {
+
+        card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, (Fragment) fragmentClass)
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
     }
 }
