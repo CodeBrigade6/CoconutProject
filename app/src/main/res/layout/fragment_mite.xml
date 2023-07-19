@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SlugFragment">
+    tools:context=".MiteFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -14,23 +14,23 @@
         android:paddingBottom="20dp">
 
         <ImageView
-            android:id="@+id/slug_imageView"
+            android:id="@+id/mite_imageView"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@drawable/slug_header"
+            android:src="@drawable/mite_header"
             />
         <TextView
-            android:id="@+id/slug_heading1"
+            android:id="@+id/mite_heading1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Slug Caterpillar"
+            android:text="Eriophyid Mite"
             android:paddingLeft="10dp"
             android:textStyle="bold"
             android:fontFamily="@font/satoshi_variable_font"
             android:textSize="28sp"
             android:textColor="@color/brown"/>
         <TextView
-            android:id="@+id/slug_paragraph1"
+            android:id="@+id/mite_paragraph1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/satoshi_medium"
@@ -40,9 +40,11 @@
             android:paddingRight="10dp"
             android:justificationMode="inter_word"
             android:textColor="@color/darkGray"
-            android:text="The larvae or caterpillar of Darna catenatus causes severe defoliation on oil palm. \nThe caterpillars usually feed on the underside of leaves. \nThe young caterpillars often strip the leaf surface to feed, while the older caterpillars eat away the whole leaf, leaving only the midrib. \nThe entire crown of the palm may be defoliated during severe out-breaks. \nSevere defoliation, particularly of the young leaves, may affect the yield of fresh fruit bunches (FFB). \nOut-breaks usually develop on small groups of palms or on isolated tree. \nFeeding damage is accentuated by invasion of Pestalotiopsis palmarum. \nHeavy infestations on coconut trees result in nut fall and the trees take 1.5-2 years to recover" />
+            android:text="The mites infest and develop on the meristematic tissues of the growing nuts under the perianth by desapping the soft tissues of the buttons.
+\nIn the damaged buttons/nuts, initial symptoms will be in the form of triangular pale white or yellow patches close to each perianth.
+\nDifferent stages of mites live in the white, tender portion covered by the inner bracts of the perianth and suck the sap continuously." />
         <TextView
-            android:id="@+id/slug_heading2"
+            android:id="@+id/mite_heading2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Control Measures"
@@ -53,7 +55,7 @@
             android:textSize="28sp"
             android:textColor="@color/brown"/>
         <TextView
-            android:id="@+id/slug_paragraph2"
+            android:id="@+id/mite_paragraph2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/satoshi_medium"
@@ -62,12 +64,8 @@
             android:paddingRight="10dp"
             android:justificationMode="inter_word"
             android:textColor="@color/darkGray"
-            android:text="1. Remove the affected leaves in the lower rows.
-Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor mounted power operated pump and spray gun to reach the tree top.
-\n2. Root feeding with monocrotophos (10 ml + 10ml) after selecting a feeder root.
-\n3. A waiting period of 45 days must be observed from application to harvest.
-\n4. Monitor the pest occurrence in new areas with the help of light traps to attract moths.
-\n5. Leaflets have to be observed for fresh incidence by cutting 1-2 leaf fronds in the garden." />
+            android:text="1. Spraying of affected palms with a mixture of 2 percent neem oil, garlic and soap mixture has been found to be effective.\n2. Sulphur is recommended for spraying at 0.4 percent concentration for mite control (5g per litre of water).
+\n3. Spraying of either 0.2 percent triazophos/0.1 percent endosulfan/0.1 percent dicofol/0.05 percent carbosulfan has also been recommended for the effective management of the mite based on field trials." />
         <TextView
             android:id="@+id/slug_heading3"
             android:layout_width="match_parent"
@@ -94,7 +92,7 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/slug_info_card"
+                    android:id="@+id/mite_info_card"
                     android:layout_width="200dp"
                     android:layout_height="250dp"
                     android:layout_margin="20dp">
@@ -108,11 +106,11 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/slug1" />
+                            android:src="@drawable/mite1" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/slug_info_card2"
+                    android:id="@+id/mite_info_card2"
                     android:layout_width="200dp"
                     android:layout_height="250dp"
                     android:layout_margin="20dp">
@@ -126,11 +124,11 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/slug2" />
+                            android:src="@drawable/mite2" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/slug_info_card3"
+                    android:id="@+id/mite_info_card3"
                     android:layout_width="200dp"
                     android:layout_height="250dp"
                     android:layout_margin="20dp">
@@ -144,11 +142,11 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/slug3" />
+                            android:src="@drawable/mite3" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/slug_info_card4"
+                    android:id="@+id/mite_info_card4"
                     android:layout_width="200dp"
                     android:layout_height="250dp"
                     android:layout_margin="20dp">
@@ -162,11 +160,11 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/slug4" />
+                            android:src="@drawable/mite4" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/slug_info_card5"
+                    android:id="@+id/mite_info_card5"
                     android:layout_width="200dp"
                     android:layout_height="250dp"
                     android:layout_margin="20dp">
@@ -180,11 +178,11 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/slug5" />
+                            android:src="@drawable/mite5" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/slug_info_card6"
+                    android:id="@+id/mite_info_card6"
                     android:layout_width="200dp"
                     android:layout_height="250dp"
                     android:layout_margin="20dp">
@@ -198,7 +196,7 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/slug6" />
+                            android:src="@drawable/mite6" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
