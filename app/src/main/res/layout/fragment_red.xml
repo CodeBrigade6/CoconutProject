@@ -17,7 +17,7 @@
             android:id="@+id/red_imageView"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@drawable/slug_header"
+            android:src="@drawable/red_header"
             />
         <TextView
             android:id="@+id/red_heading1"
@@ -40,7 +40,8 @@
             android:paddingRight="10dp"
             android:justificationMode="inter_word"
             android:textColor="@color/darkGray"
-            android:text="The larvae or caterpillar of Darna catenatus causes severe defoliation on oil palm. \nThe caterpillars usually feed on the underside of leaves. \nThe young caterpillars often strip the leaf surface to feed, while the older caterpillars eat away the whole leaf, leaving only the midrib. \nThe entire crown of the palm may be defoliated during severe out-breaks. \nSevere defoliation, particularly of the young leaves, may affect the yield of fresh fruit bunches (FFB). \nOut-breaks usually develop on small groups of palms or on isolated tree. \nFeeding damage is accentuated by invasion of Pestalotiopsis palmarum. \nHeavy infestations on coconut trees result in nut fall and the trees take 1.5-2 years to recover" />
+            android:text="Rhynchophorus ferrugineus is the dreaded key pest of coconut palm in India. \nThe pest is present in almost all coconut growing tracts of Tamil Nadu.
+\nThe severity of the pest damage is confined to certain endemic pockets such as areas having high water table and the associated luxcuriant growth of the palm, areas affected by leaf rot disease, root (wilt) affected palms and the bud rot disease." />
         <TextView
             android:id="@+id/red_heading2"
             android:layout_width="match_parent"
@@ -62,12 +63,7 @@
             android:paddingRight="10dp"
             android:justificationMode="inter_word"
             android:textColor="@color/darkGray"
-            android:text="1. Remove the affected leaves in the lower rows.
-Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor mounted power operated pump and spray gun to reach the tree top.
-\n2. Root feeding with monocrotophos (10 ml + 10ml) after selecting a feeder root.
-\n3. A waiting period of 45 days must be observed from application to harvest.
-\n4. Monitor the pest occurrence in new areas with the help of light traps to attract moths.
-\n5. Leaflets have to be observed for fresh incidence by cutting 1-2 leaf fronds in the garden." />
+            android:text="1. Remove and burn all wilting or damaged palms in coconut gardens to prevent further perpetuation of the pest. \n2. Setting up of attractant traps (mud pots) containing sugarcane molasses 2 1/2 kg/toddy 2 1/2 litres + acetic acid 5 ml + yeast 5 g + longitudinally split tender coconut stem/logs of green petiole of leaves of 30 numbers in one acre to trap adult red palm weevils in large numbers. \n3. Root feeding: Detailed under Black headed caterpillar management" />
         <TextView
             android:id="@+id/slug_heading3"
             android:layout_width="match_parent"
@@ -108,7 +104,7 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/slug1" />
+                            android:src="@drawable/red1" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -126,7 +122,7 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/slug2" />
+                            android:src="@drawable/red2" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -144,7 +140,7 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/slug3" />
+                            android:src="@drawable/red3" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -162,7 +158,7 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/slug4" />
+                            android:src="@drawable/red4" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -180,7 +176,7 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/slug5" />
+                            android:src="@drawable/red5" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -198,7 +194,7 @@ Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor
                             android:layout_height="250dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/rhino6" />
+                            android:src="@drawable/red6" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
