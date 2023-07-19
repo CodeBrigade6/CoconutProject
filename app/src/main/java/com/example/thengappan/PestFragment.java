@@ -230,12 +230,12 @@ public class PestFragment extends Fragment {
             public void onClick(View v) {
                 // Create a new instance of the fragment you want to open
 
-                WormFragment wormFragment = WormFragment.newInstance();
+                SkipperFragment skipperFragment = SkipperFragment.newInstance();
 
                 // Replace the current fragment with the new one
                 FragmentManager fragmentManager = getParentFragmentManager();
                 fragmentManager.beginTransaction()
-                        .replace(R.id.fragment_container, wormFragment)
+                        .replace(R.id.fragment_container, skipperFragment)
                         .addToBackStack(null)
                         .commit();
 
