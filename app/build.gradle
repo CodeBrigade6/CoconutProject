@@ -3,11 +3,11 @@
 }
 
 android {
-    namespace 'com.example.thengappan'
+    namespace 'com.example.thenkaapaan'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.thengappan"
+        applicationId "com.example.thenkaapaan"
         minSdk 24
         targetSdk 33
         versionCode 1

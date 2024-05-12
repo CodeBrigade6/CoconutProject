@@ -1,4 +1,4 @@
-package com.example.thengappan;
+package com.example.thenkaapaan;
 
 import android.os.Bundle;
 
@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link LeafblightFragment#newInstance} factory method to
+ * Use the {@link WhiteFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class LeafblightFragment extends Fragment {
+public class WhiteFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class LeafblightFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public LeafblightFragment() {
+    public WhiteFragment() {
         // Required empty public constructor
     }
 
@@ -34,16 +34,21 @@ public class LeafblightFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment LeafblightFragment.
+     * @return A new instance of fragment whiteFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static LeafblightFragment newInstance(String param1, String param2) {
-        LeafblightFragment fragment = new LeafblightFragment();
+    public static WhiteFragment newInstance(String param1, String param2) {
+        WhiteFragment fragment = new WhiteFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
+    }
+
+    public static WhiteFragment newInstance() {
+        WhiteFragment whiteFragment= new WhiteFragment();
+        return whiteFragment;
     }
 
     @Override
@@ -59,6 +64,6 @@ public class LeafblightFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_leafblight, container, false);
+        return inflater.inflate(R.layout.fragment_white, container, false);
     }
 }

@@ -1,6 +1,5 @@
-package com.example.thengappan;
+package com.example.thenkaapaan;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;

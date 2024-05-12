@@ -1,4 +1,4 @@
-package com.example.thengappan;
+package com.example.thenkaapaan;
 
 import android.os.Bundle;
 
@@ -8,12 +8,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link LeafrotFragment#newInstance} factory method to
+ * Use the {@link HomeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class LeafrotFragment extends Fragment {
+public class HomeFragment extends Fragment {
+
+    private LottieAnimationView lottieMenu;
+
+    Boolean isMenuClicked;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +30,9 @@ public class LeafrotFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public LeafrotFragment() {
+
+
+    public HomeFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +42,11 @@ public class LeafrotFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment LeafrotFragment.
+     * @return A new instance of fragment HomeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static LeafrotFragment newInstance(String param1, String param2) {
-        LeafrotFragment fragment = new LeafrotFragment();
+    public static HomeFragment newInstance(String param1, String param2) {
+        HomeFragment fragment = new HomeFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +67,35 @@ public class LeafrotFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_leafrot, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        init(view);
+        animation();
+        return view;
     }
+    private void init(View view) {
+        isMenuClicked = false;
+        lottieMenu = view.findViewById(R.id.lottie_menu);
+    }
+    private void animation() {
+
+        // Menu Animation
+        lottieMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (isMenuClicked) {
+                    lottieMenu.setSpeed(-1);
+                    lottieMenu.playAnimation();
+                    isMenuClicked = false;
+
+                } else {
+                    lottieMenu.setSpeed(1);
+                    lottieMenu.playAnimation();
+                    isMenuClicked = true;
+                }
+            }
+        });
+    }
+
 }

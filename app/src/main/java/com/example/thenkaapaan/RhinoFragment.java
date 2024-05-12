@@ -1,4 +1,4 @@
-package com.example.thengappan;
+package com.example.thenkaapaan;
 
 import android.os.Bundle;
 
@@ -10,10 +10,11 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MiteFragment#newInstance} factory method to
+ * Use the {@link RhinoFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MiteFragment extends Fragment {
+public class RhinoFragment extends Fragment {
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +25,8 @@ public class MiteFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public MiteFragment() {
+    public RhinoFragment() {
+   
         // Required empty public constructor
     }
 
@@ -34,22 +36,24 @@ public class MiteFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment MiteFragment.
+     * @return A new instance of fragment RhinoFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static MiteFragment newInstance(String param1, String param2) {
-        MiteFragment fragment = new MiteFragment();
+    public static RhinoFragment newInstance(String param1, String param2) {
+        RhinoFragment fragment = new RhinoFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
+
     }
 
-    public static MiteFragment newInstance() {
-        MiteFragment miteFragment= new MiteFragment();
-        return miteFragment;
+    public static RhinoFragment newInstance() {
+        RhinoFragment rhinoFragment = new RhinoFragment();
+        return rhinoFragment;
     }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,13 +61,17 @@ public class MiteFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+
+
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mite, container, false);
+        return inflater.inflate(R.layout.fragment_rhino, container, false);
     }
 }

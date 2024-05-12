@@ -1,4 +1,4 @@
-package com.example.thengappan;
+package com.example.thenkaapaan;
 
 import android.os.Bundle;
 
@@ -7,17 +7,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link RhinoFragment#newInstance} factory method to
+ * Use the {@link SkipperFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class RhinoFragment extends Fragment {
-
+public class SkipperFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,8 +24,7 @@ public class RhinoFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public RhinoFragment() {
-   
+    public SkipperFragment() {
         // Required empty public constructor
     }
 
@@ -39,24 +34,22 @@ public class RhinoFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment RhinoFragment.
+     * @return A new instance of fragment SkipperFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static RhinoFragment newInstance(String param1, String param2) {
-        RhinoFragment fragment = new RhinoFragment();
+    public static SkipperFragment newInstance(String param1, String param2) {
+        SkipperFragment fragment = new SkipperFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
-
     }
 
-    public static RhinoFragment newInstance() {
-        RhinoFragment rhinoFragment = new RhinoFragment();
-        return rhinoFragment;
+    public static SkipperFragment newInstance() {
+        SkipperFragment skipperFragment=new SkipperFragment();
+        return skipperFragment;
     }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,17 +57,13 @@ public class RhinoFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-
-
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_rhino, container, false);
+        return inflater.inflate(R.layout.fragment_skipper, container, false);
     }
 }

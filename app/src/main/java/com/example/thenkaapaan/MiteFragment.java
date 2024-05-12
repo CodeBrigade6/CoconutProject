@@ -1,4 +1,4 @@
-package com.example.thengappan;
+package com.example.thenkaapaan;
 
 import android.os.Bundle;
 
@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link WhiteFragment#newInstance} factory method to
+ * Use the {@link MiteFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class WhiteFragment extends Fragment {
+public class MiteFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class WhiteFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public WhiteFragment() {
+    public MiteFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +34,11 @@ public class WhiteFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment whiteFragment.
+     * @return A new instance of fragment MiteFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static WhiteFragment newInstance(String param1, String param2) {
-        WhiteFragment fragment = new WhiteFragment();
+    public static MiteFragment newInstance(String param1, String param2) {
+        MiteFragment fragment = new MiteFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -46,9 +46,9 @@ public class WhiteFragment extends Fragment {
         return fragment;
     }
 
-    public static WhiteFragment newInstance() {
-        WhiteFragment whiteFragment= new WhiteFragment();
-        return whiteFragment;
+    public static MiteFragment newInstance() {
+        MiteFragment miteFragment= new MiteFragment();
+        return miteFragment;
     }
 
     @Override
@@ -64,6 +64,6 @@ public class WhiteFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_white, container, false);
+        return inflater.inflate(R.layout.fragment_mite, container, false);
     }
 }
