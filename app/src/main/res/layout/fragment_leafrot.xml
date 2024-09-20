@@ -66,7 +66,7 @@
             android:textColor="@color/darkGray"
             android:text="1. Remove the rotten portions from the spear and the two adjacent leaves.\n2. Pour fungicide solution of Hexaconazole - 2ml or Mancozeb - 3g in 300ml water per palm to the base of spindle leaf. 2-3 rounds of spraying are sufficient in case of mild infection.\n3. Spray the crowns and leaves with 1% Bordeaux mixture or 0.5% copper oxychloride formulations or 0.4% mancozeb in January, April-May and September. While spraying, care has to be taken to spray the spindle leaf." />
         <TextView
-            android:id="@+id/budrot_heading3"
+            android:id="@+id/leafrot_heading3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Images and Videos"

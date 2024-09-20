@@ -7,9 +7,7 @@
     android:layout_height="match_parent"
     android:scrollbarSize="0dp"
     tools:context=".HomeFragment">
-
-
-
+     
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -95,8 +93,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/satoshi_bold"
-                android:text=""
+                android:text="29°C"
                 android:textSize="40dp"
+                android:visibility="visible"
                 app:layout_constraintEnd_toStartOf="@+id/imageView"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageView" />
@@ -121,7 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/satoshi_light"
-                android:text=""
+                android:text="Cloudy"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView"
                 app:layout_constraintEnd_toEndOf="@+id/temperatureTextView"
@@ -146,7 +145,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/satoshi_medium"
-                android:text=""
+                android:text="5%"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView2"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -170,7 +169,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/satoshi_medium"
-                android:text=""
+                android:text="3 km/hr"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView3"
                 app:layout_constraintEnd_toEndOf="@+id/imageView"

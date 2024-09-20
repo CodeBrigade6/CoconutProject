@@ -127,6 +127,7 @@
                             android:src="@drawable/phytoplasma" />
 
                         <TextView
+                            android:id="@+id/keralawilttext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="8dp"
@@ -167,6 +168,7 @@
                             android:src="@drawable/budrot" />
 
                         <TextView
+                            android:id="@+id/budrottext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="8dp"
@@ -205,6 +207,7 @@
                             android:src="@drawable/leaf_rot" />
 
                         <TextView
+                            android:id="@+id/leafrottext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="8dp"
@@ -243,6 +246,7 @@
                             android:src="@drawable/leafblight" />
 
                         <TextView
+                            android:id="@+id/leafblighttext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="8dp"
@@ -281,6 +285,7 @@
                             android:src="@drawable/stembleeding" />
 
                         <TextView
+                            android:id="@+id/stembleedingtext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="8dp"
@@ -319,6 +324,7 @@
                             android:src="@drawable/tanjorewilt" />
 
                         <TextView
+                            android:id="@+id/tanjorewilttext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="8dp"

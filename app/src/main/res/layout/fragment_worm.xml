@@ -20,7 +20,7 @@
             android:src="@drawable/worm_header"
             />
         <TextView
-            android:id="@+id/white_heading1"
+            android:id="@+id/black_heading1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Black Headed Worm"

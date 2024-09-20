@@ -134,11 +134,36 @@
 
 
         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/traslate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
 
+            <ImageView
+                android:id="@+id/translate_image"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/tamil_icon" />
 
-
+            <TextView
+                android:id="@+id/translate_text"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Translate"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

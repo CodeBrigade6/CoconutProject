@@ -1,5 +1,153 @@
 <resources>
     <string name="app_name">Thenkaapaan</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drone_view">Drone View</string>
+    <string name="crop_protection">Crop Protection</string>
+    <string name="take_action">Take action</string>
+    <string name="import_image">First import your image using camera</string>
+    <string name="identified_pest">The identified Pest/Disease is:</string>
+    <string name="click_to_know_more">Click on the result to know more..!</string>
+    <string name="home">Home</string>
+    <string name="budrot_heading1">Bud Rot</string>
+    <string name="budrot_paragraph1">Palms of all ages are susceptible, but it is more severe in young palms of 5-10 years. The first indication of the disease is seen on the central shoot of the tree (spindle). The heart leaf shows discolouration which becomes brown instead of yellowish brown. This is followed by drooping and breaking off of the heart leaf. With the progress of disease, more number of leaves get affected with loss of lusture and turn pale yellow. The entire base of the crown may be rotten emitting a foul smell. The central shoot comes off easily on slight pulling. The leaves fall in succession starting from the top of the crown. The leaf falling and bunch shedding continue until a few outer leaves are left unaffected. But within few months the infection leads to complete shedding of leaves, with subsequent wilt and death of the tree.</string>
+    <string name="budrot_heading2">Control Measures</string>
+    <string name="budrot_paragraph2">1. The infected tissues from the crown region should be removed and protected with Bordeaux paste. 2. Bordeaux mixture at 1% may be sprayed so as to reach the crown region as pre-monsoon spray.</string>
+    <string name="budrot_heading3">Images and Videos</string>
+    <string name="bugs_heading1">Mealy Bugs</string>
+    <string name="worm_paragraph1">The build up of the pest begins soon after the cessation of monsoon rains. It reaches a peak during the hot summer months. Incidence of this pest is particularly severe in drought years.</string>
+    <string name="worm_heading2">Control Measures</string>
+    <string name="worm_paragraph2">1. Remove leaflets harbouring these insects and destroy them. 2. Spray any one of the following a) Malthion at 2 ml/litre of water b) Dimethoate 1 ml/litre c) Methyldemeton 1 ml/litre d) Monocrotophos 1 ml/litre e) Application of neem oil (30 ml/litre) is effective in controlling mealy bug.</string>
+    <string name="worm_heading3">Images and Videos</string>
+    <string name="shielding_the_scars">Shielding the Scars</string>
+    <string name="for_a">for a</string>
+    <string name="greener_world">Greener World!</string>
+    <string name="coconut_diseases">Coconut Diseases</string>
+    <string name="coconut_pests">Coconut Pests</string>
+    <string name="nutrient_deficiency">Nutrient Deficiency</string>
+    <string name="kerala_wilt">Kerala wilt</string>
+    <string name="bud_rot">Bud rot</string>
+    <string name="leaf_rot">Leaf rot</string>
+    <string name="leaf_blight">Leaf Blight</string>
+    <string name="stem_bleeding">Stem Bleeding</string>
+    <string name="tanjore_wilt">Tanjore wilt</string>
+    <string name="trending_infection">Trending Infection</string>
+    <string name="scan_with_mobile">Scan With Mobile</string>
+    <string name="easy_scan">Easy Scan</string>
+    <string name="black_stem_rot">Black Stem Rot</string>
+    <string name="nutshell_borer">Nutshell Borer</string>
+    <string name="ai_scan">AI Scan</string>
+    <string name="leafblight_heading1">Leaf Blight</string>
+    <string name="leafblight_paragraph1">Leaf blight causes serious damage in seedlings, leaves and nuts of adult palms. Generally the adult leaves in the outer whorls are affected. The affected leaflets start drying from the tip downwards and exhibit a charred or burnt appearance. Dark grey to brown lesions with wavy to undulated margins appear from the apex of the nuts. The fungus entered into the kernel through mesocarp, resulting in a decay of the endosperm. The affected nuts were desiccated, shrunken, deformed and dropped prematurely, resulting in nut yield loss up to 10 to 25%. The incidence was noticed throughout the year, and maximum incidence was observed during summer months. Spores and the resting structures on the affected portion of the leaves served as inoculum for further spread through wind.</string>
+    <string name="leafblight_heading2">Control Measures</string>
+    <string name="leafblight_paragraph2">1. Remove and burn the severely affected leaves to avoid further spread. 2. Application of 200g Pseudomonas fluorescens along with 50 kg of FYM + 5 kg of Neemcake/palm/year. 3. Spray 1.0 per cent Bordeaux mixture or 0.25 percent Copper oxychloride (2 times at 45 days interval during summer months). 4. Root feeding of Carbendazim 2 g or Hexaconazole/Tridemorph 2 ml + 100 ml water (3 times at 3 months interval).</string>
+    <string name="leafblight_heading3">Images and Videos</string>
+    <string name="leafrot_heading1">Leaf Rot</string>
+    <string name="leafrot_paragraph1">The first symptom is the appearance of water-soaked brown lesions in the spear leaves of root-wilt affected palms. Gradually these spots enlarge and coalesce resulting in extensive rotting. As the leaf unfurls the rotten portions of the lamina dry and get blown off in wind, giving a fan shape to the leaves. Sometimes, the symptom becomes very acute and the spear fails to unfurl.</string>
+
+    <string name="leafrot_heading2">Control Measures</string>
+    <string name="leafrot_paragraph2">1. Remove the rotten portions from the spear and the two adjacent leaves. 2. Pour fungicide solution of Hexaconazole – 2ml or Mancozeb – 3g in 300ml water per palm to the base of spindle leaf. 2-3 rounds of spraying are sufficient in case of mild infection. 3. Spray the crowns and leaves with 1% Bordeaux mixture or 0.5% copper oxychloride formulations or 0.4% mancozeb in January, April-May, and September. While spraying, care has to be taken to spray the spindle leaf.</string>
+
+    <string name="leafrot_heading3">Images and Videos</string>
+    <string name="mite_heading1">Eriophyid Mite</string>
+    <string name="mite_paragraph1">The mites infest and develop on the meristematic tissues of the growing nuts under the perianth by desapping the soft tissues of the buttons.\nIn the damaged buttons/nuts, initial symptoms will be in the form of triangular pale white or yellow patches close to each perianth.\nDifferent stages of mites live in the white, tender portion covered by the inner bracts of the perianth and suck the sap continuously.</string>
+
+    <string name="mite_heading2">Control Measures</string>
+    <string name="mite_paragraph2">1. Spraying of affected palms with a mixture of 2 percent neem oil, garlic, and soap mixture has been found to be effective.\n2. Sulphur is recommended for spraying at 0.4 percent concentration for mite control (5g per litre of water).\n3. Spraying of either 0.2 percent triazophos/0.1 percent endosulfan/0.1 percent dicofol/0.05 percent carbosulfan has also been recommended for the effective management of the mite based on field trials.</string>
+
+    <string name="mite_heading3">Images and Videos</string>
+    <string name="rhinoceros_beetle">Rhinoceros Beetle</string>
+    <string name="slug_caterpillar">Slug Caterpillar</string>
+    <string name="red_palm_weevil">Red Palm Weevil</string>
+    <string name="eriophyid_mite">Eriophyid Mite</string>
+    <string name="white_grub">White Grub</string>
+    <string name="black_headed_worm">Black Headed Worm</string>
+    <string name="mealy_bugs">Mealy Bugs</string>
+    <string name="coconut_skipper">Coconut Skipper</string>
+    <string name="heading_kerala_wilt">Kerala wilt (or) Root wilt</string>
+    <string name="paragraph_1">
+        Tapering of terminal portion of the trunk.\nReduction of leaf size\nAbnormal bending or Ribbing of leaf lets termed as flaccidity.\nFlowering is delayed and also yield is considerably reduced.\nThe characteristic symptom is the flaccidity of leaflets. This is the earliest visual symptom. In the beginning yellowing is restricted from the leaf tips to the middle of the leaves, necrosis of leaflets and deterioration and decay of root system are other salient features of the disease. The leaflets curve inwardly to produce ribbing so that the whole frond develops a cup like appearance. Abnormal shedding of buttons and immature nuts are also noticed.
+    </string>
+    <string name="heading_control_measures">Control Measures</string>
+    <string name="paragraph_2">
+        1. Cut and remove disease advanced, uneconomical palms yielding less than 10 nuts per palm per year.\n2. Irrigate coconut palms with at least 250 litre water in a week.\n3. Apply 50 kg FYM or green manure and 5 kg of neem cake / palm / year.\n4. Apply fertilizers for coconut palms in average management at the rate of 1.3 kg urea, 2.00 kg super phosphate and 3.5 kg potash (MOP) / palm / year in the form of urea, rock phosphate and muriate of potash, respectively.
+    </string>
+    <string name="heading_images_and_videos">Images and Videos</string>
+    <string name="red_heading1">Red Palm Weevil</string>
+    <string name="red_paragraph1">Rhynchophorus ferrugineus is the dreaded key pest of coconut palm in India. The pest is present in almost all coconut growing tracts of Tamil Nadu. The severity of the pest damage is confined to certain endemic pockets such as areas having high water table and the associated luxuriant growth of the palm, areas affected by leaf rot disease, root (wilt) affected palms and the bud rot disease.</string>
+
+    <string name="red_paragraph2">1. Remove and burn all wilting or damaged palms in coconut gardens to prevent further perpetuation of the pest. 2. Setting up of attractant traps (mud pots) containing sugarcane molasses 2 1/2 kg/toddy 2 1/2 litres + acetic acid 5 ml + yeast 5 g + longitudinally split tender coconut stem/logs of green petiole of leaves of 30 numbers in one acre to trap adult red palm weevils in large numbers. 3. Root feeding: Detailed under Black headed caterpillar management.</string>
+
+    <string name="rhino_heading1">Rhinoceros Beetle</string>
+    <string name="rhino_paragraph1">Coconut trees are more prone to rhinoceros beetle attacks during summer. The young stage of this young beetle grows only in earth pits and waste piles. But during the growing and mature stage, only the mature beetle attacks the coconut trees. V shaped leaves are the symptoms of the beetle attack. This is because the beetle bites the young sprout of the coconut trees.</string>
+    <string name="control_measures">Control Measures</string>
+    <string name="rhino_paragraph2">1. Neem Powder (150 gm) and soft sand mixed in the ratio 1:2 can be applied in the middle of the palm once every three months to prevent damage. 2. At a rate of one per acre, rhinoceros beetle breeding traps can attract and kill the beetles. 3. Three naphthalene balls per tree can be kept in between the barks of the palm.</string>
+    <string name="images_and_videos">Images and Videos</string>
+    <string name="skipper_heading1">Coconut Skipper</string>
+    <string name="skipper_paragraph1">Pest population occurs year-round but peaks from June to September, coinciding with the onset of monsoon. One half of the leaflets are cut and rolled into a case. The rolled leaflets are dried.</string>
+
+    <string name="skipper_paragraph2">1. Collect and destroy the immature stages of the insects by conducting a study (or neem campaign) wherever possible and spray carbaryl 50 WP 2 gm/lit. 2. Spray dichlorvos 76 WSC 2 ml/lit.</string>
+    <string name="slug_heading1">Slug Caterpillar</string>
+    <string name="slug_paragraph1">The larvae or caterpillar of Darna catenatus causes severe defoliation on oil palm. The caterpillars usually feed on the underside of leaves. The young caterpillars often strip the leaf surface to feed, while the older caterpillars eat away the whole leaf, leaving only the midrib. The entire crown of the palm may be defoliated during severe outbreaks. Severe defoliation, particularly of the young leaves, may affect the yield of fresh fruit bunches (FFB). Outbreaks usually develop on small groups of palms or on isolated trees. Feeding damage is accentuated by the invasion of Pestalotiopsis palmarum. Heavy infestations on coconut trees result in nut fall, and the trees take 1.5-2 years to recover.</string>
+
+    <string name="slug_paragraph2">1. Remove the affected leaves in the lower rows. Spray dichlorvos at 2 ml/litre of water with a pedal pump/rocker sprayer/tractor-mounted power-operated pump and spray gun to reach the tree top. 2. Root feeding with monocrotophos (10 ml + 10 ml) after selecting a feeder root. 3. A waiting period of 45 days must be observed from application to harvest. 4. Monitor the pest occurrence in new areas with the help of light traps to attract moths. 5. Leaflets have to be observed for fresh incidence by cutting 1-2 leaf fronds in the garden.</string>
+    <string name="stembleeding_heading">Stem Bleeding</string>
+    <string name="stem_bleeding_description">
+        The progress of the disease is faster during July to November.
+        Stem Bleeding is characterized by the exudation of a dark reddish brown liquid from the longitudinal cracks in the bark and wounds on the stem trickling down for a distance of several inches to several feet.
+        The lesions spread upwards as the disease progresses.
+        The liquid oozing out dries up and turns black. The tissues below the lesions become rotten and turn yellow first and later black.
+        In advanced cases, the inner portions of affected trunks are hollow due to decay of inner tissues.
+        As a result of extensive damage in the stem tissue, the outer whorl of the leaves turn yellow, dry and shed prematurely. The production of bunches is affected adversely. Nut fall is also noticed.
+    </string>
+    <string name="control_measures_description">
+        1. Destroy the chiseled materials by burning. Avoid any mechanical injury to trunk.
+        2. Along with 50kg FYM, apply 5kg neem cake containing the antagonistic fungi, Trichoderma @ 200g/palm/year culture to the basin during September.
+        3. Chisel out completely the affected tissues and paint the wound with tridemorph 5% or Bordeaux paste. Apply coal tar after 1-2 days on the treated portion. Burn off chiseled pieces.
+        4. Root feed with Tridemorph 5ml in 100 ml water, thrice a year during April-May, September-October and January-February to prevent further spread of lesions.
+    </string>
+    <string name="tanjore_wilt_heading">Tanjore Wilt</string>
+    <string name="tanjore_wilt_description">
+        Initial symptoms of Thanjore wilt (Ganoderma wilt) start with yellowing and drooping of the outer whorl of leaves.
+        This is followed by exudation of reddish brown liquid through cracks at the base of the trunk and oozing spread upwards.
+        Decaying of tissues at bleeding point and rotting of the basal portion of the stem.
+        The bark turns brittle and often gets peeled off in flakes, leaving open cracks and crevices.
+        The internal tissues are discoloured, disintegrated and emitting a bad smell.
+        Bracket formation at the base of the trunk during rainy season. Ultimately the palm dies off.
+    </string>
+    <string name="control_measures_description_tanjore">
+        1. Remove and destroy all affected palms.
+        2. Apply Pseudomonas fluorescens (Pf-1) @ 200g/palm + Trichoderma viride @ 200g/palm/year.
+        3. Apply 200g Phosphobacteria and 200 g Azotobactor mixed with 50kg of FYM/palm.
+        4. Apply FYM 50kg + neem cake 5 Kg once in 6 months along with fertilizers.
+        5. Root feeding with Tridemorph 2ml or Hexaconazole 1 ml with 100 ml of water (3 times at 3 months interval).
+        6. Forty litres of 1% Bordeaux mixture should be applied as soil drench around the trunk in a radius of 1.5m.
+    </string>
+    <string name="white_grub_heading">White Grub</string>
+    <string name="white_grub_description">
+        Grubs feed on the apical soft region of the coconut roots. Infestations affect the process of absorption of nutrients adversely.
+        Infested palms show yellowing of leaves and immature nuts fall.
+        Infestation in a garden continuously for a few years results in stunted growth of young palms. In nurseries, they cause drying up of leaves and gradual death of seedlings.
+    </string>
+
+    <string name="control_measures_description_white">
+        1. This can be controlled by stem injection through a stove wick soaked in 0.2% (2 ml/litre) Fenthion or 0.2% (2 ml/litre) Dichlorvos and plugging the hole, repeating the treatment using the same wick and hole a month after.
+        2. Tree banding with inverted iron cores or prosophis thorns.
+        3. Baiting with bromodiolone 0.05% at 10 g/tree at crown region twice at an interval of 12 days.
+    </string>
+    <string name="black_headed_worm_heading">Black Headed Worm</string>
+    <string name="worm_description">
+        Opisinia arenosella is one of the key pests of the coconut palm.
+        Its outbreak often assumes severe proportions in the interior tracts near river belts, paddy fields, and along the coastal areas in Tamil Nadu.
+        The caterpillars construct galleries out of silken webs reinforced with excreta and the scraps of leaf bits.
+        Hiding in these galleries, the caterpillars feed on the chlorophyll-containing parenchymatous tissue. Only the upper epidermis is kept intact.
+    </string>
+
+    <string name="control_measures_description_black">
+        1. Optimum level of release is 1:8 of host-parasite ratio.
+        2. The parasite should be released @ 3000/ha under the coconut trees when the pest is in the 2nd or 3rd instar larval stage.
+        3. Parasite release trap may be used to release the parasite at the site of feeding.
+        4. Parasites should not be released in the crown region since they will be killed by predators like spiders and reduvid bugs.
+    </string>
+
+
 </resources>

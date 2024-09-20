@@ -67,7 +67,7 @@
             android:text="1. Spraying of affected palms with a mixture of 2 percent neem oil, garlic and soap mixture has been found to be effective.\n2. Sulphur is recommended for spraying at 0.4 percent concentration for mite control (5g per litre of water).
 \n3. Spraying of either 0.2 percent triazophos/0.1 percent endosulfan/0.1 percent dicofol/0.05 percent carbosulfan has also been recommended for the effective management of the mite based on field trials." />
         <TextView
-            android:id="@+id/slug_heading3"
+            android:id="@+id/mite_heading3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Images and Videos"
